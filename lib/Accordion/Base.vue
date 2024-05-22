@@ -1,6 +1,6 @@
 <script setup>
 import Accordion from "primevue/accordion";
-import preset from "./presets/default.ts";
+import preset from "./presets/default";
 
 defineOptions({
   inheritAttrs: false
@@ -14,10 +14,4 @@ defineOptions({
       <slot :name="slot"></slot>
     </template>
   </Accordion>
-
-
 </template>
-
-<style scoped>
-
-</style>
