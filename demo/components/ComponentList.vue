@@ -25,7 +25,7 @@ watch(sliderValue, () => {
 <template>
   <div class="flex gap-x-4 gap-y-8 flex-wrap">
 
-    <Card class="w-72">
+    <Card class="grow basis-72	">
       <template #title>Accordion</template>
       <template #subtitle>Subtitle Text</template>
       <template #content>
@@ -37,7 +37,7 @@ watch(sliderValue, () => {
       </template>
     </Card>
 
-    <Card class="w-72">
+    <Card class="grow	basis-72	">
       <template #title>Slider</template>
       <template #subtitle>Subtitle Text</template>
       <template #content>
@@ -50,7 +50,7 @@ watch(sliderValue, () => {
       </template>
     </Card>
 
-    <Card class="w-72">
+    <Card class="grow	basis-72	">
       <template #title>Gradiant Slider</template>
       <template #content>
         <div class="mb-8">
@@ -63,7 +63,7 @@ watch(sliderValue, () => {
       </template>
     </Card>
 
-    <Card class="w-72">
+    <Card class="grow	basis-72	">
       <template #title>Chips</template>
 
       <template #content>
@@ -79,7 +79,7 @@ watch(sliderValue, () => {
 
     <h2 class="w-full text-xl font-bold text-primary">Form / Input</h2>
 
-    <Card class="w-72">
+    <Card class="grow	basis-72	">
       <template #title>Checkbox</template>
 
       <template #content>
@@ -88,7 +88,7 @@ watch(sliderValue, () => {
       </template>
     </Card>
 
-    <Card class="w-72">
+    <Card class="grow	basis-72	">
       <template #title>Buttons</template>
       <template #content>
         <Button label="Default Button"/>
@@ -96,7 +96,7 @@ watch(sliderValue, () => {
       </template>
     </Card>
 
-    <Card class="w-72">
+    <Card class="grow	basis-72	">
       <template #title>Toggle</template>
       <template #content>
         <InputSwitch v-model="booleanState" inputId="primary" label="Primary"/>
