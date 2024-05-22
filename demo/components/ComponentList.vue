@@ -2,7 +2,9 @@
 import {reactive, ref, watch} from "vue";
 import AccordionTab from "primevue/accordiontab";
 
-const booleanState = ref(true)
+const booleanState1 = ref(true)
+const booleanState2 = ref(true)
+
 const sliderValue = ref(300)
 const chipsArray = ref(['Chip One', 'The second'])
 
@@ -83,8 +85,12 @@ watch(sliderValue, () => {
       <template #title>Checkbox</template>
 
       <template #content>
-        <Checkbox v-model="booleanState" :binary="true" inputId="checkboxId" name="pizza"/>
-        <label class="ml-2" for="checkboxId"> Cheese </label>
+        <div class="mb-4">
+          <Checkbox v-model="booleanState1" :binary="true" inputId="checkboxId1" name="without-label"/>
+          <label class="ml-2" for="checkboxId1"> Without label </label>
+        </div>
+
+        <Checkbox v-model="booleanState2" :binary="true" inputId="checkboxId2" label="with label" name="with-label"/>
       </template>
     </Card>
 
@@ -99,7 +105,7 @@ watch(sliderValue, () => {
     <Card class="grow	basis-72	">
       <template #title>Toggle</template>
       <template #content>
-        <InputSwitch v-model="booleanState" inputId="primary" label="Primary"/>
+        <InputSwitch v-model="booleanState1" inputId="primary" label="Primary"/>
       </template>
     </Card>
 
